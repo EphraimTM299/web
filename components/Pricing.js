@@ -197,13 +197,13 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> */}
-              <img
+            
+              {/* <img
                 src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"
                 alt=""
-              />
-              <img
+              /> */}
+              {/* <img
                 src="/assets/Icon/netflix.png"
                 className="h-14 w-auto mt-2 lg:mt-0"
                 alt=""
@@ -222,7 +222,7 @@ const Pricing = () => {
                 src="/assets/Icon/spotify.png"
                 className="h-12 w-auto mt-2 lg:mt-0"
                 alt=""
-              />
+              /> */}
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
@@ -231,7 +231,7 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Trusted by Thousands of Happy Customer{" "}
+              Trusted by Thousands of Happy Customers{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}

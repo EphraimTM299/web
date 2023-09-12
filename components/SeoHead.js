@@ -4,10 +4,10 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: 'LaslesVPN',
-  siteName: 'LaslesVPN',
+  title: 'Teillo Partners',
+  siteName: 'Teillo Partners',
   description:
-    'Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest',
+    'Partner with Teillo as a laundry or dry cleaning partner today',
   // change base url of your web (without '/' at the end)
   url: 'https://next-landing-vpn.vercel.app',
   type: 'website',
@@ -15,7 +15,7 @@ const defaultMeta = {
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
   image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
-  author: 'Lorem Ipsum'
+  author: 'Ephraim Makurumidze'
 };
 
 /**
@@ -63,7 +63,7 @@ const SeoHead = (props) => {
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@F2aldi' />
+      <meta name='twitter:site' content='@teillodotcom' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
@@ -87,13 +87,13 @@ const SeoHead = (props) => {
         <link key={linkProps.href} {...linkProps} />
       ))}
       {/* Windows 8 app icon */}
-      <meta name='msapplication-TileColor' content='#F53838' />
+      <meta name='msapplication-TileColor' content='#3b82f6' />
       <meta
         name='msapplication-TileImage'
         content='/favicon/ms-icon-144x144.png'
       />
       {/* Accent color on supported browser */}
-      <meta name='theme-color' content='#F53838' />
+      <meta name='theme-color' content='#3b82f6' />
     </Head>
   );
 };
