@@ -217,11 +217,11 @@ const Header = () => {
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimony");
+                setActiveLink("testimoni");
               }}
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "testimony"
+                (activeLink === "testimoni"
                   ? "  border-blue-500 text-blue-500"
                   : " border-transparent ")
               }
