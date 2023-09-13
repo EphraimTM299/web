@@ -69,7 +69,6 @@ export default function Example() {
       </div>
     </motion.div>
 
-
     </ScrollAnimationWrapper>
  
   

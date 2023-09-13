@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Dashboard from "../public/assets/Dashboard.png"
 
 const features = [
   "Powerfull online protection.",
@@ -23,7 +24,7 @@ const Feature = () => {
       <ScrollAnimationWrapper className="flex w-full justify-center">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Dashboard.png"
+               src="/assets/dashboard.png"
               alt="teillo dashboard"
               layout="responsive"
              
