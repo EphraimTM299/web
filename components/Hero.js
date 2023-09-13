@@ -54,6 +54,13 @@ const Hero = ({
                   height={384}
                   layout="responsive"
                 />
+                 {/* <Image
+            src="/assets/Data.png"
+            alt="Product screenshot"
+            className=" max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10  md:-ml-4 lg:-ml-0"
+            width={2800}
+            height={1600}
+          /> */}
               </motion.div>
             </div>
           </motion.div>
