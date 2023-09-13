@@ -46,7 +46,7 @@ const Hero = ({
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                <Image
+                <img
                   src="/assets/Data.png"
                   alt="teillo data"
                   // quality={100}
