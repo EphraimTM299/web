@@ -44,7 +44,7 @@ const Header = () => {
                   : " text-black-500 hover:text-blue-500 a")
               }
             >
-              About
+              Home
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -62,7 +62,7 @@ const Header = () => {
                   : " text-black-500 hover:text-blue-500 ")
               }
             >
-              Feature
+              Features
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -214,7 +214,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="testimony"
+              to="testimoni"
               spy={true}
               smooth={true}
               duration={1000}

@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import Service from "../components/MoreFeatures";
+import Pricing2 from "../components/Pricing2";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <Hero />
         <Service/>
         <Feature />
-        <Pricing />
+        <Pricing2 />
       </Layout>
     </>
   );
