@@ -3,7 +3,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Dashboard from "../public/assets/Dashboard.png"
+
 
 const features = [
   "Powerfull online protection.",
