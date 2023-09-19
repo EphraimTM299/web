@@ -14,7 +14,7 @@ const Pricing2 = () => {
 
     <div
       className="bg-white-500 w-full py-14"
-      id="pricing2"
+      id="pricing"
     >
  <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
   <div className="mx-auto px-5 py-4 md:max-w-screen-lg">
@@ -42,26 +42,26 @@ const Pricing2 = () => {
             <div className="flex w-full flex-col items-center pb-6">
               <p className="m-6 text-center text-xl font-semibold">Standard</p>
               <div className="mb-4 items-baseline">
-                <p className="text-center text-sm font-light text-gray-600 line-through">$14.99</p>
+                <p className="text-center text-sm font-light text-gray-600 line-through">R449.99</p>
                 <div className="flex items-baseline justify-center">
-                  <p className="text-4xl font-semibold text-gray-800">$8</p>
+                  <p className="text-4xl font-semibold text-gray-800">R19</p>
                   <p className="text-2xl font-semibold text-gray-800">.99</p>
                   <p className="ml-1 text-lg tracking-wide">/ month</p>
                 </div>
                 <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
               </div>
-              <p className="text-center text-base">$215 billed every 2 years</p>
+              <p className="text-center text-base">R19.99/month for 6 months</p>
             </div>
-            <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-sm border border-gray-400 bg-transparent p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button
+            <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button
             ><button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
-              <p id="choose-annual-standard-plan" className="my-2 text-gray-600 underline">Choose annual plan</p>
+              {/* <p id="choose-annual-standard-plan" className="my-2 text-gray-600 underline">Choose annual plan</p> */}
             </button>
             <div className="flex w-full flex-col">
               <div className="my-6 mx-4 self-center">
                 <div className="mb-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                     <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base">24 months of unlimited access</span>
+                  ><span className="ml-2 text-base">6 months of unlimited access</span>
                 </div>
                 <div className="mb-3 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
@@ -104,19 +104,17 @@ const Pricing2 = () => {
                 <div className="mb-4 items-baseline">
                   <p className="text-center text-sm font-light text-gray-600 line-through">$24.99</p>
                   <div className="flex items-baseline justify-center">
-                    <p className="text-4xl font-semibold text-blue-500">$14</p>
+                    <p className="text-4xl font-semibold text-blue-500">R19</p>
                     <p className="text-2xl font-semibold text-blue-500">.99</p>
                     <p className="ml-1 text-lg tracking-wide">/ month</p>
                   </div>
                   <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
                 </div>
-                <p className="text-center text-base">$179 billed annually</p>
+                <p className="text-center text-base">R19.99/month for 6 months</p>
               </div>
-              <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-sm border-blue-500 bg-blue-500 p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-100 duration-200" id="buyNowAnnual-300-lg">Get Started</button
-              ><button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-gray-100 py-3 pl-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
-                <p id="choose-two-year-premium-plan" className="my-2 text-gray-600 underline">Choose 2 year plan</p>
-                <span className="ml-2 h-6 rounded-full border border-indigo-200 bg-blue-100 px-2 pt-1 text-xs leading-4 text-blue-800 no-underline">Save 16%</span>
-              </button>
+              <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border-blue-500 bg-blue-500 p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-100 duration-200" id="buyNowAnnual-300-lg">Get Started</button
+              >
+
               <div className="flex w-full flex-col">
                 <div className="my-6 mx-4 self-center">
                   <div className="mb-3 flex">
@@ -185,14 +183,15 @@ const Pricing2 = () => {
             <div className="mb-4 items-baseline">
               <p className="text-center text-sm font-light text-gray-600 line-through">$59</p>
               <div className="flex items-baseline justify-center">
-                <p className="text-4xl font-semibold text-gray-800">$35</p>
+              <p className="text-4xl font-semibold text-gray-800">$0</p>
+                  <p className="text-2xl font-semibold text-gray-800">.99</p>
                 <p className="ml-1 text-lg tracking-wide">/ month</p>
               </div>
               <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
             </div>
             <p className="text-center text-base">billed every month</p>
           </div>
-          <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-sm border border-gray-400 bg-transparent p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowMonthly-100-lg">Get Started</button>
+          <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowMonthly-100-lg">Get Started</button>
           <p className="mt-4"></p>
           <div className="flex w-full flex-col">
             <div className="my-6 mx-4 self-center">

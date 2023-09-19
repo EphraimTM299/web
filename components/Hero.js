@@ -4,6 +4,7 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Typewriter from "typewriter-effect";
 
 const Hero = ({
    stats = [
@@ -19,9 +20,10 @@ const Hero = ({
       className="max-w-screen-xl mt-20 px-8 xl:px-16 mx-auto"
       id="about"
     >
+         
       <ScrollAnimationWrapper>
           <motion.div
-            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-8"
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-4 sm:py-8"
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl space-x-3 space-y-3 font-medium text-black-600 leading-normal">
@@ -47,8 +49,43 @@ const Hero = ({
             </div>
           </motion.div>
       </ScrollAnimationWrapper>
-      
-      
+
+      <ScrollAnimationWrapper>
+    <section class="py-10 sm:py-16 lg:py-24">
+    <motion.div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8" >
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
+            <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+            <motion.div variants={scrollAnimation}>
+                <h3 class="font-bold text-7xl">
+                    <span class="text-transparent bg-clip-text bg-blue-500"> 2+ </span>
+                </h3>
+                <p class="mt-4 text-xl font-medium text-gray-900">Years in business</p>
+                <p class="text-base mt-0.5 text-gray-600">Creating the successful path</p>
+            </motion.div>
+
+            <motion.div variants={scrollAnimation} >
+                <h3 class="font-bold text-7xl">
+                    <span class="text-transparent bg-clip-text bg-blue-500"> 1M+ </span>
+                </h3>
+                <p class="mt-4 text-xl font-medium text-gray-900">Orders delivered</p>
+                <p class="text-base mt-0.5 text-gray-600">In last 2 years</p>
+            </motion.div>
+
+            <motion.div variants={scrollAnimation} >
+                <h3 class="font-bold text-7xl">
+                    <span class="text-transparent bg-clip-text bg-blue-500"> 60+ </span>
+                </h3>
+                <p class="mt-4 text-xl font-medium text-gray-900">Partner Service Providers</p>
+                <p class="text-base mt-0.5 text-gray-600">Working for your success</p>
+            </motion.div>
+        </div>
+    </motion.div>
+</section>
+</ScrollAnimationWrapper>
       
     </div>
   );
