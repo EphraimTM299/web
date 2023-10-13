@@ -7,6 +7,60 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Pricing2 = () => {
+
+  const StandardListBenefits=[
+    
+      {
+      benefitName:"Onsite Order Creation"
+    },
+      {
+      benefitName:"Historic Orders Upload"
+    }, {
+      benefitName:"Analytics"
+    }, 
+      {
+      benefitName:"Excel Data Export"
+    }
+    , 
+      {
+      benefitName:"Reports Export"
+    }
+    , 
+      {
+      benefitName:"Loyalty Program"
+    }, {
+      benefitName:"Discount System"
+    }, 
+      {
+      benefitName:"SMS System"
+    }, 
+    {
+      benefitName:"Online Orders Fulfilling"
+    }, 
+    
+  ]
+
+   const PremiumListBenefits=[
+    {
+      benefitName:"Standard Plan +"
+    }, 
+       {
+      benefitName:"Staff Time Management"
+    }, 
+       {
+      benefitName:" Advanced Analytics"
+    }
+    , 
+    
+    {
+      benefitName:"Marketing Tools"
+    },
+    {
+      benefitName:"Request Custom Analytics"
+    },
+       
+     
+  ]
     
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -115,7 +169,7 @@ const Pricing2 = () => {
         <div className="relative mb-12 w-full self-center lg:mr-6 lg:self-auto">
           <div className="shadow-xs relative flex flex-col overflow-hidden rounded-md border border-gray-400 bg-white">
             <div className="flex h-8 items-center justify-center bg-teal-200 p-2">
-              <span className="text-xs font-semibold uppercase leading-4 text-green-900">best for growing</span>
+              <span className="text-xs font-semibold uppercase leading-4 text-green-900">best for growth</span>
             </div>
             <div className="relative flex h-full flex-col items-center px-4">
               <div className="flex w-full flex-col items-center pb-6">
@@ -136,84 +190,15 @@ const Pricing2 = () => {
 
               <div className="flex w-full flex-col">
                 <div className="my-6 mx-4 self-center">
-                  <div className="mb-3 flex">
+                  {StandardListBenefits.map((listItem,i)=><div className="mb-3 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Automated Email Invoicing</span>
+                    ><span className="ml-2 text-base">{listItem.benefitName}</span>
                   </div>
-                   <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Onsite Order Creation</span>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base justify-start">Accounting Software</span>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Current System Integration</span>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Historic Orders Upload</span>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Analytics</span>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Data Export</span>
-                    <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
-                        <circle cx="12" cy="12" r="10" className=""></circle>
-                        <line x1="12" y1="16" x2="12" y2="12" className=""></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Loyalty Program</span>
-                    <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
-                        <circle cx="12" cy="12" r="10" className=""></circle>
-                        <line x1="12" y1="16" x2="12" y2="12" className=""></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">Discount System</span>
-                    <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
-                        <circle cx="12" cy="12" r="10" className=""></circle>
-                        <line x1="12" y1="16" x2="12" y2="12" className=""></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                    ><span className="ml-2 text-base">SMS Enabled</span>
-                    <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
-                        <circle cx="12" cy="12" r="10" className=""></circle>
-                        <line x1="12" y1="16" x2="12" y2="12" className=""></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
-                      </svg>
-                    </div>
-                  </div>
+                  
+                  )}
+                  
+                  
                 </div>
               </div>
               <div className="flex w-full flex-col"></div>
@@ -245,32 +230,15 @@ const Pricing2 = () => {
               {/* <p id="choose-annual-standard-plan" className="my-2 text-gray-600 underline">Choose annual plan</p> */}
             </button>
             <div className="flex w-full flex-col">
-              <div className="my-6 mx-4 self-center">
-                <div className="mb-3 flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                    <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base">6 Months of Unlimited Access</span>
-                </div>
-                <div className="mb-3 flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                    <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base">New courses every week</span>
-                </div>
-                <div className="mb-3 flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                    <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base">Completion Certificates</span>
-                </div>
-                <div className="mb-3 flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                    <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base">Skill assessments</span>
-                </div>
-                <div className="mb-3 flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
-                    <polyline points="20 6 9 17 4 12" className=""></polyline></svg
-                  ><span className="ml-2 text-base"> Early access to new courses</span>
-                </div>
+              <div className="my-4 mx-4 self-center">
+                {PremiumListBenefits.map((listItem,i)=><div className="mb-3 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                      <polyline points="20 6 9 17 4 12" className=""></polyline></svg
+                    ><span className="ml-2 text-base">{listItem.benefitName}</span>
+                  </div>
+                  
+                  )}
+                
               </div>
             </div>
             <div className="flex w-full flex-col"></div>
