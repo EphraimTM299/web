@@ -62,7 +62,7 @@ const Header = () => {
                   : " text-black-500 hover:text-blue-500 ")
               }
             >
-              Features
+             <Link href="/">Features</Link>
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -80,7 +80,7 @@ const Header = () => {
                   : " text-black-500 hover:text-blue-500 ")
               }
             >
-              Pricing
+            <Link href="/">Pricing</Link>
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -98,7 +98,7 @@ const Header = () => {
                   : " text-black-500 hover:text-blue-500 ")
               }
             >
-              Testimonials
+             <Link href="/">Testimonial</Link>
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">

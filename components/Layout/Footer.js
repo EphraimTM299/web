@@ -31,7 +31,7 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
           <ul className="text-black-500 ">
             <li className="my-2 hover:text-indigo-500 cursor-pointer transition-all">
-              Sign Up{" "}
+              <Link href="/partners">Sign Up</Link>
             </li>
             <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
               Pricing{" "}
@@ -46,12 +46,7 @@ const Footer = () => {
             <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
               Teillo?{" "}
             </li>
-            <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-            <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
-              Tutorials{" "}
-            </li>
+           
             <li className="my-2 hover:text-blue-500 cursor-pointer transition-all">
               About Us{" "}
             </li>

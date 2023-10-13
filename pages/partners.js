@@ -47,9 +47,6 @@ const Partner = () => {
          turnaround: 24,
          deliveryPrice: 0,
          imagePath: "",
-         bankAccountNumber: "",
-         bankName: "",
-         branchCode: "",
          email:email,
          userUid: userUId,
          userPhone: userPhone,
@@ -60,9 +57,9 @@ const Partner = () => {
          numberOfLocations:numberOfLocations,
          termsAccepted:terms,
         //  pricelist:pricelist
-       }).then(result => alert("item added"));
+       }).then(result => alert("SignUp Complete"));
      } catch (error) {
-       alert(error);
+       alert(error.message);
      }
    }
 
@@ -80,7 +77,7 @@ const Partner = () => {
         userRole: userRole,
         termsAccepted:terms,
        //  pricelist:pricelist
-      }).then(result => alert("item added"));
+      }).then(result => alert("User Added"));
     } catch (error) {
       alert(error);
     }
@@ -109,9 +106,9 @@ const Partner = () => {
         data.termsAccepted,
         // data.pricelist
 
-         )).catch((Error))
+         ))
         
-         onError(alert(Error.message))
+        
          
 		} catch (error) {
 			alert(error);
@@ -322,7 +319,7 @@ const Partner = () => {
       <label className="block uppercase tracking-wide text-white-500 text-xs font-bold mb-2" htmlFor="grid-zip">
         Zip
       </label>
-      <input onError={ console.log(errors.zip)} {...register("zip", {required: true, message:"error" , ErrorMessage:"something is wrong" }) }className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white-500 focus:border-gray-500" id="grid-zip" type="text" placeholder="Zip Code"/>
+      <input {...register("zip", {required: true, message:"error" , ErrorMessage:"something is wrong" }) }className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white-500 focus:border-gray-500" id="grid-zip" type="text" placeholder="Zip Code"/>
       
     </div>
     
@@ -361,10 +358,6 @@ const Partner = () => {
   </motion.div>
   </ScrollAnimationWrapper>
   
-
-  
-     
-      
       </Layout>
     </>
   );

@@ -32,7 +32,7 @@ const Hero = ({
               <p className="text-black-500 mt-4 mb-6">
               Get a deeper understandig of your business operations with Teillo
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary link='/partners'  >Get Started</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>

@@ -227,7 +227,7 @@ const Pricing2 = () => {
             </div>
             <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button
             ><button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
-              {/* <p id="choose-annual-standard-plan" className="my-2 text-gray-600 underline">Choose annual plan</p> */}
+              
             </button>
             <div className="flex w-full flex-col">
               <div className="my-4 mx-4 self-center">
