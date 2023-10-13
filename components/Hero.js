@@ -27,17 +27,17 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl space-x-3 space-y-3 font-medium text-black-600 leading-normal">
-                <strong>10X+ Increase Revenue</strong> {" "} with Online Presense
+                <strong> A Data Driven Approach</strong> {" "}<br/> to your <strong>Business</strong>
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-              Giving your business operations a data driven approach
+              Get a deeper understandig of your business operations with Teillo
               </p>
               <ButtonPrimary>Get Started</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <Image
-                   src="/assets/Data.png"
+                   src="/assets/Data_extraction.png"
                   alt="teillo data"
                   
                   width={800}
@@ -55,7 +55,7 @@ const Hero = ({
     <motion.div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8" >
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
-            <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+            <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Our mission is to make your life easier with our <strong>software</strong> . You can focus on the things you are great at and leverage our tools to do that seamlessly.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">

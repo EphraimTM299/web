@@ -16,7 +16,6 @@ export default function Home() {
         <Hero />
         <Feature />
         <Service/>
-        
         <Pricing2 />
         <FAQ/>
         <Testimonials/>
