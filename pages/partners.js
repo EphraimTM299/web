@@ -84,6 +84,7 @@ const Partner = () => {
   }
 
   const onSubmit = async (data, event) => {
+ 
 
     try {
 			 await createUserWithEmailAndPassword(auth,data.email, data.password).then(UserCredential =>
@@ -106,7 +107,9 @@ const Partner = () => {
         data.termsAccepted,
         // data.pricelist
 
-         ))
+         )).then((result)=>{
+        
+         })
         
         
          
