@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
-
-import { Footer } from "../components/footer";
-import PopupWidget from "../components/popupWidget";
-
 import Container from "../components/container";
 import Link from "next/link";
+import Layout from "../components/Layout/Layout";
 
 const Privacy = () => {
   return (
@@ -24,7 +20,7 @@ const Privacy = () => {
         
       </Head>
 
-      <Navbar />
+    <Layout>
       <Container>
      
     
@@ -147,11 +143,8 @@ const Privacy = () => {
                 </p> 
         
       </Container>
+      </Layout>
 
-     
-
-      <Footer />
-      <PopupWidget />
     </>
   );
 }
