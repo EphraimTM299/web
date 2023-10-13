@@ -45,7 +45,7 @@ export const TeilloWelcomeEmail = ({
           The platform is designed to give your a data driven approach to business.
         </Text>
         <Section style={btnContainer}>
-          <Button pX={12} pY={12} style={button} href="https://getkoala.com">
+          <Button pX={12} pY={12} style={button} href="https://teillo.com">
             Explore Dashboard
           </Button>
         </Section>
