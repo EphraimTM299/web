@@ -46,8 +46,8 @@ const Testimonials = () => {
                   </h5>
                   <p className="text-white-300">What are you waiting for, Get started today.</p>
                 </div>
-              <button className="px-16 py-5 font-semibold text-blue-500 rounded-xl bg-white-500"> <Link href="/partner" >Get Started </Link> </button>
-                {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
+               <ButtonOutline link="/partners">Get Started</ButtonOutline>
+              
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

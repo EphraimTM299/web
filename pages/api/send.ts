@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { EmailTemplate } from '../../components/email-template';
+import { TeilloWelcomeEmail } from '../../components/email-template';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
@@ -10,7 +10,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       from: 'Teillo Business Team <info@teillo.com>',
       to: "teillo365@gmail.com",
       subject: 'Welcome to Teillo. Business',
-      react: EmailTemplate({ firstName: 'Ephraim' }),
+      react: TeilloWelcomeEmail({ userFirstname: 'Ephraim' }),
     });
 
     res.status(200).json(data);
