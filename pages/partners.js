@@ -17,10 +17,12 @@ import {
 import { useState } from "react";
 import SearchBox from "../components/searchbox";
 import Spinner from "../components/Spinner";
+import { useRouter } from "next/router";
 
 const dbx= getFirestore();
 
 const Partner = () => {
+  const router = useRouter()
 
    const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const { register,setValue, handleSubmit } = useForm({
@@ -60,31 +62,11 @@ const Partner = () => {
          numberOfLocations:numberOfLocations,
          termsAccepted:terms,
         //  pricelist:pricelist
-       }).then(result => alert("SignUp Complete"));
+       }).then(result => router.push('/account-created') );
      } catch (error) {
        alert(error.message);
      }
    }
-
-   async function createLaundryUser (userUId,userName,name,email,userRole,userPhone,terms) {
-
-    try {
-       addDoc(collection(dbx, 'laundryUsersTest'), {
-        laundromatName: name,
-        accountCreated: Timestamp.now(),
-        email:email,
-        uid: userUId,
-        userPhone: userPhone,
-        userEmail:email,
-        userName:userName,
-        userRole: userRole,
-        termsAccepted:terms,
-       //  pricelist:pricelist
-      }).then(result => alert("User Added"));
-    } catch (error) {
-      alert(error);
-    }
-  }
 
   const onSubmit = async (data, event) => {
 
