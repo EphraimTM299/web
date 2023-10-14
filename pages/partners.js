@@ -38,7 +38,7 @@ const Partner = () => {
 
 
      try {
-        addDoc(collection(dbx, 'laundromatTest'), {
+        addDoc(collection(dbx, 'laundromats'), {
          name: name,
          rating: 0,
          accountCreated: Timestamp.now(),
