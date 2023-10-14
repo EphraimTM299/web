@@ -9,7 +9,7 @@ const defaultMeta = {
   description:
     'Partner with Teillo as a laundry or dry cleaning partner today',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://partners-website-teillo.vercel.app/',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)

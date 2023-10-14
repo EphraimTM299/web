@@ -55,7 +55,7 @@ const Hero = ({
     <motion.div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8" >
         <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
-            <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Our mission is to make your life easier with our <strong>software</strong> . You can focus on the things you are great at and leverage our tools to do that seamlessly.</p>
+            <p class="mt-3 text-xl leading-relaxed  md:mt-8">Our mission is to make your life easier with our <strong>software</strong> . You can focus on the things you are great at and leverage our tools to do that seamlessly.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
