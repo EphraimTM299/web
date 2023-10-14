@@ -17,10 +17,10 @@ const Feature = () => {
 
   return (
     <div
-      className="max-w-screen-xl mt-6 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+      className="max-w-screen-xl sm:mt-14  px-6 sm:px-8 lg:px-16 mx-auto"
       id=""
     >
-      <div className="grid grid-flow-row invisible sm:visible md:visible gap-8 py-8 my-12">
+      <div className="grid grid-flow-row  sm:visible md:visible gap-8">
       <ScrollAnimationWrapper className="flex w-full justify-center">
           <motion.div className="h-full w-full mx-10 p-8" variants={scrollAnimation}>
            <div className="aspect-[16/9] border-4 border-blue-600 rounded-lg">

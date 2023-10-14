@@ -117,8 +117,7 @@ const Partner = () => {
     {loading? <Spinner/>:
     <Layout>
 
-      <ScrollAnimationWrapper>
-        <motion.div variants={scrollAnimation}>
+     
 
       <Container className="flex flex-wrap xl:m-24 lg:m-24 m-4">
           <div className="flex items-center w-full lg:w-1/2">
@@ -344,8 +343,7 @@ const Partner = () => {
    </div>
      {/* </div> */}
   </Container>
-  </motion.div>
-  </ScrollAnimationWrapper>
+  
   
   
       </Layout>}

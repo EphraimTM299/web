@@ -48,7 +48,7 @@ export default function Example() {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div
-    className="max-w-screen-xl mt-44 px-8 xl:px-16 mx-auto"
+    className="max-w-screen-xl  px-8 xl:px-16 mx-auto"
     id="feature"
   >
     <ScrollAnimationWrapper>
