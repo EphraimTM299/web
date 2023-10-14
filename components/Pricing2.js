@@ -5,6 +5,7 @@ import ButtonOutline from "./misc/ButtonOutline.";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import ButtonPrimary from "./misc/ButtonPrimary";
 
 const Pricing2 = () => {
 
@@ -106,8 +107,9 @@ const Pricing2 = () => {
               </div>
               <p className="text-center text-base">R19.99/month for 6 months</p>
             </div>
-            <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button
-            ><button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
+            <ButtonOutline link='/partners'>Get Started</ButtonOutline>
+            {/* <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button> */}
+            <button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
               {/* <p id="choose-annual-standard-plan" className="my-2 text-gray-600 underline">Choose annual plan</p> */}
             </button>
             <div className="flex w-full flex-col">
@@ -185,8 +187,8 @@ const Pricing2 = () => {
                 </div>
                 <p className="text-center text-base">R19.99/month for 6 months</p>
               </div>
-              <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border-blue-500 bg-blue-500 p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-100 duration-200" id="buyNowAnnual-300-lg">Get Started</button
-              >
+              <ButtonPrimary link='/partners'>Get Started</ButtonPrimary>
+              {/* <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border-blue-500 bg-blue-500 p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-100 duration-200" id="buyNowAnnual-300-lg">Get Started</button> */}
 
               <div className="flex w-full flex-col">
                 <div className="my-6 mx-4 self-center">
@@ -212,6 +214,7 @@ const Pricing2 = () => {
       <div className="relative mt-8 mb-12 w-full self-center lg:mr-6 lg:self-auto">
         <div id="" className="relative flex flex-col overflow-hidden rounded-md border border-gray-400 bg-white-500 shadow-none">
           <div className="relative flex h-full flex-col items-center px-4">
+               <span className="text-xs font-semibold mt-2 uppercase leading-4 text-green-900">best for growth</span>
             <div className="flex w-full flex-col items-center pb-6">
               <p className="m-6 text-center text-xl font-semibold">Premium</p>
               <div className="mb-4 items-baseline">
@@ -225,8 +228,10 @@ const Pricing2 = () => {
               </div>
               <p className="text-center text-base">R19.99/month for 6 months</p>
             </div>
-            <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button
-            ><button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
+            <ButtonOutline link='/partners'>Get Started</ButtonOutline>
+
+            {/* <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button */}
+            <button className="mt-4 flex h-6 cursor-pointer items-center justify-center overflow-visible rounded-full bg-transparent p-3 text-center text-sm font-normal normal-case leading-normal tracking-wide duration-200">
               
             </button>
             <div className="flex w-full flex-col">
