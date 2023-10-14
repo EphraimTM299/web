@@ -16,9 +16,9 @@ import {
 } from 'firebase/auth';
 import { useState } from "react";
 import SearchBox from "../components/searchbox";
+import Spinner from "../components/Spinner";
 
 const dbx= getFirestore();
-
 
 const Partner = () => {
 
@@ -26,11 +26,14 @@ const Partner = () => {
   const { register,setValue, handleSubmit } = useForm({
     criteriaMode: "all",
   });
+
+   const [loading, setLoading] = useState(false);
   
   const [setError,  errors ]=useState(false);
   const signUp  = useAuth();
 
     async function sendData (userUId,name,address, city,email,userRole, laundryType, userName,userPhone,province, numberOfLocations , lat, lng, terms, pricelist) {
+
 
      try {
         addDoc(collection(dbx, 'laundromatTest'), {
@@ -84,7 +87,8 @@ const Partner = () => {
   }
 
   const onSubmit = async (data, event) => {
- 
+
+    setLoading(true);
 
     try {
 			 await createUserWithEmailAndPassword(auth,data.email, data.password).then(UserCredential =>
@@ -94,7 +98,6 @@ const Partner = () => {
         data.businessName,
         data.businessAddress,
         data.city,
-        // data.turnaround,
         data.email,
         data.role,
         data.laundryType,
@@ -105,32 +108,33 @@ const Partner = () => {
         data.latitude,
         data.latitude,
         data.termsAccepted,
-        // data.pricelist
+   
 
-         )).then((result)=>{
+         )).then ( async (result)=>{
+          await fetch("api/send", {
+        method: "POST",
+        body: JSON.stringify({
+        firstName: data.firstName,
+        email: data.email,
         
-         })
-        
-        
+      }),
+    });
+
+    setLoading(false)
+         })  
          
 		} catch (error) {
 			alert(error);
 		}
     
-    // data.preventDefault();
-    console.log("data",data.email);
-    console.log(event);
-    // throw new Error();
-  
+     
   } 
 
   return (
     <>
+    {loading? <Spinner/>:
     <Layout>
-      <div
-      className="max-w-screen-xl mt-20 px-8 xl:px-16 mx-auto"
-      
-    ></div>
+
       <ScrollAnimationWrapper>
         <motion.div variants={scrollAnimation}>
 
@@ -361,7 +365,8 @@ const Partner = () => {
   </motion.div>
   </ScrollAnimationWrapper>
   
-      </Layout>
+  
+      </Layout>}
     </>
   );
 }

@@ -12,8 +12,11 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
+import Image from 'next/image';
+
 interface TeilloWelcomeEmailProps {
-  userFirstname: string;
+  firstName: string;
+  email:string
 }
 
 const baseUrl = process.env.VERCEL_URL
@@ -21,7 +24,7 @@ const baseUrl = process.env.VERCEL_URL
   : '';
 
 export const TeilloWelcomeEmail = ({
-  userFirstname = 'Zeno',
+  firstName ,
 }: TeilloWelcomeEmailProps) => (
   <Html>
     <Head />
@@ -30,25 +33,53 @@ export const TeilloWelcomeEmail = ({
     </Preview>
     <Body style={main}>
       <Container style={container}>
-        <Img
-          src={`${baseUrl}/static/koala-logo.png`}
-          width="170"
-          height="50"
-          alt="Koala"
-          style={logo}
-        />
-        <Text style={paragraph}>Hi {userFirstname},</Text>
+        
+        <Text style={paragraph}>Hi {firstName},</Text>
         <Text style={paragraph}>
-          Welcome to Teillo Business, the order management platform that helps you
-          uncover what's hiding in your business's data.<br/>
+        
+            We're thrilled to welcome you to Teillo Business! 
+            
+         <br/> <br/>Thank you for choosing us as your trusted partner for your business operations and order management.
 
-          The platform is designed to give your a data driven approach to business.
+          <br/> Here at Teillo, we are committed to empowering your business and helping you achieve your goals. 
+          
+          <br/>Our mission is to make your work easier, more efficient, and ultimately more successful.
+
+           <br/> What You Can Expect from Us:
+
+            <ul className='text-sm'>
+              <li>User-Friendly Interface: Our platform is designed with simplicity and efficiency in mind. You'll find that Teillo Business is intuitive and easy to use, allowing you to get started quickly.</li> <br/>
+              <li>24/7 Customer Support: Our dedicated support team is here to assist you around the clock. Whether you have questions, need guidance, or encounter any issues, we're just a message away.</li><br/>
+              <li> Continuous Updates: We're constantly improving our platform to meet your evolving needs. Expect regular updates and new features to enhance your experience.</li><br/>
+              <li> Resourceful Knowledge Base: Visit our Knowledge Base for comprehensive guides, tutorials, and helpful tips. It's a valuable resource for maximizing your Teillo Business experience.</li><br/>
+            </ul>
+
+            
+          <Text style={paragraph}>
+           What's Next:
+,
+          <br /><br />
+           Onboarding Assistance: We will send you a video tutorial on how the platform works. It is an intuitive platform, so don't worry.
+           <br/><br />
+            We're excited to embark on this journey with you and can't wait to see the amazing things you'll achieve with Teillo Business. 
+            
+            
+            <br /><br />If you have any questions, concerns, or feedback, please don't hesitate to reach out to our support team.
         </Text>
-        <Section style={btnContainer}>
+           
+           
+           <br/>
+
+           <Text style={paragraph}> Once again, welcome to the Teillo Business community. We're here to help you succeed.</Text>
+
+           
+
+        </Text>
+        {/* <Section style={btnContainer}>
           <Button pX={12} pY={12} style={button} href="https://teillo.com">
             Explore Dashboard
           </Button>
-        </Section>
+        </Section> */}
         <Text style={paragraph}>
           Best,
           <br />
