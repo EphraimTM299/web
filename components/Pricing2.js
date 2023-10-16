@@ -99,13 +99,13 @@ const Pricing2 = () => {
               <div className="mb-4 items-baseline">
                 <p className="text-center text-sm font-light text-gray-600 line-through">R449.99</p>
                 <div className="flex items-baseline justify-center">
-                  <p className="text-4xl font-semibold text-gray-800">R19</p>
+                  <p className="text-4xl font-semibold text-gray-800">R219</p>
                   <p className="text-2xl font-semibold text-gray-800">.99</p>
                   <p className="ml-1 text-lg tracking-wide">/ month</p>
                 </div>
                 <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
               </div>
-              <p className="text-center text-base">R19.99/month for 6 months</p>
+              <p className="text-center text-base">R219/month for 6 months</p>
             </div>
             <ButtonOutline link='/partners'>Get Started</ButtonOutline>
             {/* <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border border-gray-400 bg-transparent p-3 text-center  text-sm font-bold normal-case leading-normal tracking-wide text-gray-900 duration-200 hover:border-blue-500 hover:bg-blue-500 hover:text-gray-100" id="buyNowTwo Year Plan-200-lg">Get Started</button> */}
@@ -179,13 +179,13 @@ const Pricing2 = () => {
                 <div className="mb-4 items-baseline">
                   <p className="text-center text-sm font-light text-gray-600 line-through">999.99</p>
                   <div className="flex items-baseline justify-center">
-                    <p className="text-4xl font-semibold text-blue-500">R19</p>
+                    <p className="text-4xl font-semibold text-blue-500">R499</p>
                     <p className="text-2xl font-semibold text-blue-500">.99</p>
                     <p className="ml-1 text-lg tracking-wide">/ month</p>
                   </div>
                   <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
                 </div>
-                <p className="text-center text-base">R19.99/month for 6 months</p>
+                <p className="text-center text-base">R499.99/month for 6 months</p>
               </div>
               <ButtonPrimary link='/partners'>Get Started</ButtonPrimary>
               {/* <button className="flex w-full cursor-pointer items-center justify-center overflow-visible rounded-xl border-blue-500 bg-blue-500 p-3 text-center text-sm font-bold normal-case leading-normal tracking-wide text-gray-100 duration-200" id="buyNowAnnual-300-lg">Get Started</button> */}
@@ -220,13 +220,13 @@ const Pricing2 = () => {
               <div className="mb-4 items-baseline">
                 <p className="text-center text-sm font-light text-gray-600 line-through">R1499.99</p>
                 <div className="flex items-baseline justify-center">
-                  <p className="text-4xl font-semibold text-gray-800">R19</p>
+                  <p className="text-4xl font-semibold text-gray-800">R749</p>
                   <p className="text-2xl font-semibold text-gray-800">.99</p>
                   <p className="ml-1 text-lg tracking-wide">/ month</p>
                 </div>
                 <p className="mt-1 text-center font-light text-gray-600"><span className="mr-2">discounted price</span></p>
               </div>
-              <p className="text-center text-base">R19.99/month for 6 months</p>
+              <p className="text-center text-base">R749.99/month for 6 months</p>
             </div>
             <ButtonOutline link='/partners'>Get Started</ButtonOutline>
 

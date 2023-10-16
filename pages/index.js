@@ -16,7 +16,6 @@ export default function Home() {
         <Feature />
         <Service/>
         <Pricing2 />
-      
         <Testimonials/>
       </Layout>
     </>
