@@ -5,6 +5,7 @@ import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../components/Layout/ScrollAnimationWrapper";
 import { useMemo } from "react"
+import ButtonOutline from "../components/misc/ButtonOutline.";
 
 
 export default function Example() {
@@ -22,12 +23,13 @@ export default function Example() {
           <p className="mt-6 text-base leading-7 text-gray-600">Welcome to Teillo Business, We are happy to have you on board</p>
           <p className="mt-6 text-base leading-7 text-gray-600">Please check your email for further info.</p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
+            <ButtonOutline link="/">Go Home</ButtonOutline>
+            {/* <a
               href="/"
               className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white-500 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
             >
               Go home
-            </a>
+            </a> */}
             <a href="#" className="text-sm font-semibold text-gray-900">
               Contact support <span aria-hidden="true">&rarr;</span>
             </a>
