@@ -36,7 +36,6 @@ const Partner = () => {
 
     async function sendData (userUId,name,address, city,email,userRole, laundryType, userName,userPhone,province, numberOfLocations , lat, lng, terms, pricelist) {
 
-
      try {
         addDoc(collection(dbx, 'laundromats'), {
          name: name,
@@ -91,7 +90,6 @@ const Partner = () => {
         data.latitude,
         data.termsAccepted,
    
-
          )).then ( async (result)=>{
           await fetch("api/send", {
         method: "POST",
@@ -108,8 +106,7 @@ const Partner = () => {
 		} catch (error) {
 			alert(error);
 		}
-    
-     
+         
   } 
 
   return (
