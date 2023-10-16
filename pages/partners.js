@@ -116,16 +116,10 @@ const Partner = () => {
     <>
     {loading? <Spinner/>:
     <Layout>
-
-     
-
       <Container className="flex flex-wrap xl:m-24 lg:m-24 m-4">
           <div className="flex items-center w-full lg:w-1/2">
             
-           
-            
-          
-              <div className="p-16"> 
+              <div className="p-36"> 
               <Image
                 src={benefitOneImg}
                           
@@ -133,8 +127,7 @@ const Partner = () => {
                 loading="eager"
                 placeholder="blur"
                 />
-                 
-        
+                
               </div>
         </div>
        
@@ -173,8 +166,6 @@ const Partner = () => {
          }
          )} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white-500" id="grid-first-name" type="text" placeholder="First Name"/>
      
-
-      
     </div>
     <div className="w-full md:w-1/2 px-3">
       <label className="block uppercase tracking-wide text-white-500 text-xs font-bold mb-2" htmlFor="grid-last-name">
@@ -182,8 +173,6 @@ const Partner = () => {
       </label>
       <input {...register("lastName", {  required: true, })} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded mb-3 py-3 px-4 leading-tight focus:outline-none focus:bg-white-500 focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last Name"/>
     
-     
-
     </div>
     
   </div>
@@ -225,7 +214,6 @@ const Partner = () => {
       
     </div>
    
-    
   </div>
   <div className="flex flex-wrap -mx-3  mb-8 mt-2">
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -318,10 +306,7 @@ const Partner = () => {
     <input {...register("pricelist", {  required: true,  }) } className="block w-full text-sm text-gray-900 border border-white-500  cursor-pointer bg-gray-50  focus:outline-none " aria-describedby="file_input_help" id="file_input" type="file"/>
     <p className="mt-2 mb-2 text-xs text-white-500 dark:text-gray-300" id="file_input_help">PNG, JPG(MAX. 800x400px).</p>
 
-
     {/* input file ends here */}
-
-   
 
 {/* terms accepted */}
     <div className="flex items-center rounded-xl mt-4">
@@ -343,8 +328,6 @@ const Partner = () => {
    </div>
      {/* </div> */}
   </Container>
-  
-  
   
       </Layout>}
     </>
