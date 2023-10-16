@@ -80,7 +80,7 @@ function ReadySearchBox({onSelectAddress, defaultValue}:ISearchBoxProps){
         <Combobox onSelect={(handleSelect)} >
             <ComboboxInput id='search' onChange={handleChange} disabled={!ready} placeholder='Search your Location' className=' appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"' autoComplete='off'/>
         <ComboboxPopover>
-            <ComboboxList className='bg-white text-gray-800' >
+            <ComboboxList className='bg-white-500 text-gray-800' >
                 {status=="OK" && data.map(({placeid, description})=> <ComboboxOption key={placeid} value={description}/>)}
             </ComboboxList>
         </ComboboxPopover>
