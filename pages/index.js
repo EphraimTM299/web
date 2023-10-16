@@ -2,7 +2,7 @@ import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
-import Service from "../components/MoreFeatures";
+import MoreFeatures from "../components/MoreFeatures";
 import Pricing2 from "../components/Pricing2";
 import Testimonials from "../components/Testimonials";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Feature />
-        <Service/>
+        <MoreFeatures/>
         <Pricing2 />
         <Testimonials/>
       </Layout>

@@ -148,7 +148,7 @@ const Partner = () => {
           <option>Owner</option>
         
         </select>
-        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white-500">
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black-500">
           
         </div>
       </div>
@@ -196,6 +196,25 @@ const Partner = () => {
       <input {...register("phone", { required: true,  })} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white-500" id="grid-phone-number" type="tel" placeholder="Phone Number"/>
       
     </div>
+    <div className="w-full md:w-1/2 px-3  mt-4 md:mb-0">
+      <label className="block uppercase tracking-wide  text-white-500 text-xs font-bold mb-2" htmlFor="grid-state">
+      Subscription Plan </label>
+      <div className="relative">
+        <select {...register("Plan", {  required: true,  })} className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white-500 focus:border-gray-500" >
+           <option>Choose A Plan</option>
+           <option>Starter (219.99)</option>
+          <option>Standard (499.99)</option>
+          <option>Premium (749.99)</option>
+          
+         
+        
+        </select>
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white-500">
+         
+        </div>
+      </div>
+      
+    </div>
   </div>
   <div className="flex flex-wrap -mx-3 mb-6">
     <div className="w-full px-3">
@@ -238,7 +257,9 @@ const Partner = () => {
          
         </div>
       </div>
+      
     </div>
+    
     <div className="w-full md:w-1/3 px-3 mb-4 md:mb-0">
       <label className="block uppercase tracking-wide  text-white-500 text-xs font-bold mb-2" htmlFor="grid-state">
       Locations      </label>
@@ -251,7 +272,7 @@ const Partner = () => {
           <option>5 or More</option>
         
         </select>
-        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white-500">
+        <div className="pointer-events-auto absolute inset-y-0 right-0 flex items-center px-2 text-black-500">
          
         </div>
       </div>

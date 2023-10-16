@@ -31,13 +31,7 @@ firstName,
     </Preview>
     <Body style={main}>
       <Container style={container}>
-        <Img
-          src={`${baseUrl}/static/koala-logo.png`}
-          width="170"
-          height="50"
-          alt="Koala"
-          style={logo}
-        />
+        
         <Text style={paragraph}>Hi Admin,</Text>
         <Text style={paragraph}>
           {firstName} just signed their business up with [email]
@@ -46,10 +40,10 @@ firstName,
         <Text style={paragraph}>
           Best,
           <br />
-          The Koala team
+          The Teillo Team
         </Text>
         <Hr style={hr} />
-        <Text style={footer}>408 Warren Rd - San Mateo, CA 94402</Text>
+        
       </Container>
     </Body>
   </Html>

@@ -24,7 +24,7 @@ const Feature = () => {
       <ScrollAnimationWrapper className="flex w-full justify-center">
           <motion.div className="h-full w-full mx-10 p-8" variants={scrollAnimation}>
            <div className="aspect-[16/9] border-4 border-blue-600 rounded-lg">
-          <div className="p-4">
+          <div className="sm:p-4">
             <Image 
                 src="/assets/dashboard.png"
                 alt="teillo dashboard"

@@ -116,28 +116,28 @@ const Pricing2 = () => {
              <div className="my-6 mx-4 self-center">
                  
                    <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">Onsite Order Creation</span>
                   </div>
                  
                 
                   <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">Historic Orders Upload</span>
                   </div>
                   <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">Basic Analytics</span>
                   </div>
                   <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">Excel Data Export</span>
                     <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                         <circle cx="12" cy="12" r="10" className=""></circle>
                         <line x1="12" y1="16" x2="12" y2="12" className=""></line>
                         <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
@@ -146,11 +146,11 @@ const Pricing2 = () => {
                   </div>
                 
                   <div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">Discount System</span>
                     <div className="mt-1 ml-1 flex items-center text-gray-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                         <circle cx="12" cy="12" r="10" className=""></circle>
                         <line x1="12" y1="16" x2="12" y2="12" className=""></line>
                         <line x1="12" y1="8" x2="12.01" y2="8" className=""></line>
@@ -193,7 +193,7 @@ const Pricing2 = () => {
               <div className="flex w-full flex-col">
                 <div className="my-6 mx-4 self-center">
                   {StandardListBenefits.map((listItem,i)=><div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">{listItem.benefitName}</span>
                   </div>
@@ -237,7 +237,7 @@ const Pricing2 = () => {
             <div className="flex w-full flex-col">
               <div className="my-4 mx-4 self-center">
                 {PremiumListBenefits.map((listItem,i)=><div className="mb-3 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 flex-shrink-0 p-px text-blue-500">
                       <polyline points="20 6 9 17 4 12" className=""></polyline></svg
                     ><span className="ml-2 text-base">{listItem.benefitName}</span>
                   </div>
