@@ -14,7 +14,8 @@ import * as React from 'react';
 
 interface NewBusinessSignupProps {
   firstName: string;
-  email:string
+  email:string, 
+  businessName:string
 }
 
 const baseUrl = process.env.VERCEL_URL
@@ -22,7 +23,7 @@ const baseUrl = process.env.VERCEL_URL
   : '';
 
 export const NewBusinessSignup = ({
-firstName,
+firstName,email, businessName
 }: NewBusinessSignupProps) => (
   <Html>
     <Head />
@@ -34,7 +35,7 @@ firstName,
         
         <Text style={paragraph}>Hi Admin,</Text>
         <Text style={paragraph}>
-          {firstName} just signed their business up with [email]
+          {firstName} just signed their business {businessName} up with the following email: {email}
         </Text>
         
         <Text style={paragraph}>

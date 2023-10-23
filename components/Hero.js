@@ -5,6 +5,7 @@ import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Typewriter from "typewriter-effect";
+import LogoClouds from "./logoClouds";
 
 const Hero = ({
 
@@ -45,6 +46,8 @@ const Hero = ({
             </div>
           </motion.div>
       </ScrollAnimationWrapper>
+
+      {/* <LogoClouds/> */}
 
       <ScrollAnimationWrapper>
     <section class="py-10 sm:py-16 lg:py-24">

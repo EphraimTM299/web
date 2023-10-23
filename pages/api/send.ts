@@ -7,7 +7,7 @@ const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     if(req.method === 'POST'){
-      const {email, firstName} = JSON.parse( await req.body);
+      const {email, firstName, businessName} = JSON.parse( await req.body);
     try {
     const data = await resend.emails.send({
       from: 'Teillo Business Team <info@teillo.com>',
@@ -20,7 +20,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       from: 'Teillo Business Team <info@teillo.com>',
       to: [ 'info@teillo.com'],
       subject: 'New Business SignUp',
-      react: NewBusinessSignup({ firstName, email  }),
+      react: NewBusinessSignup({ firstName, email ,businessName }),
     });
    
 

@@ -96,6 +96,7 @@ const Partner = () => {
         body: JSON.stringify({
         firstName: data.firstName,
         email: data.email,
+        businessName: data.businessName,
         
       }),
     });
