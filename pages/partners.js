@@ -251,6 +251,7 @@ const Partner = () => {
           <option>Laundromat</option>
           <option>Carpet Cleaner</option>
           <option>Laundromat & Dry Cleaner</option>
+          <option>Affiliate</option>
          
         
         </select>
@@ -322,7 +323,7 @@ const Partner = () => {
     {/* input file */}
 
     <label className="block mb-4 mt-4 text-sm font-medium text-white-500 dark:text-white-500" htmlFor="file_input">Upload Pricelist</label>
-    <input {...register("pricelist", {  required: true,  }) } className="block w-full text-sm text-gray-900 border border-white-500  cursor-pointer bg-gray-50  focus:outline-none " aria-describedby="file_input_help" id="file_input" type="file"/>
+    <input {...register("pricelist", {  required: false,  }) } className="block w-full text-sm text-gray-900 border border-white-500  cursor-pointer bg-gray-50  focus:outline-none " aria-describedby="file_input_help" id="file_input" type="file"/>
     <p className="mt-2 mb-2 text-xs text-white-500 dark:text-gray-300" id="file_input_help">PNG, JPG(MAX. 800x400px).</p>
 
     {/* input file ends here */}
@@ -330,7 +331,7 @@ const Partner = () => {
 {/* terms accepted */}
     <div className="flex items-center rounded-xl mt-4">
     <input {...register("termsAccepted", {  required: true,  }) } id="link-checkbox" type="checkbox" value="" className="w-4 h-4 text-gray-900 bg-gray-100 border-gray-300 rounded-xl focus:ring-gray-900  focus:ring-2 "/>
-  <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-white-500 dark:text-gray-300"><a className="text-gray-300 dark:text-white-500 hover:underline">Accept Terms and Conditions</a></label>
+  <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-white-500 dark:text-gray-300"><a  className="text-gray-300  hover:underline">Accept Terms and Conditions</a></label>
     
     </div>
 
